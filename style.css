@@ -1,0 +1,314 @@
+@import url(bootstrap-theme.min.css);
+@import url(bootstrap.min.css);
+@import url(owl.carousel.min.css);
+@import url(owl.theme.default.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+body {
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif; }
+
+.team_logo {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative; }
+  .team_logo img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.navbar-default {
+  background-image: none; }
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    padding-top: 15px !important; } }
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #fff; }
+  .navbar .logo_header {
+    width: 125px;
+    height: 40px; }
+    .navbar .logo_header img {
+      width: 100%;
+      height: 100%; }
+
+.navbar-right li {
+  border-bottom: 2px solid transparent; }
+  .navbar-right li:hover {
+    background-color: #f8f9fb;
+    border-bottom: 2px solid #49cbcd; }
+  .navbar-right li a {
+    color: #484c55;
+    font-size: 15px;
+    padding: 45px 27px; }
+    .navbar-right li a:hover {
+      color: #49cbcd !important; }
+    @media screen and (max-width: 992px) {
+      .navbar-right li a {
+        padding: 30px 20px; } }
+
+.navbar-brand {
+  padding-top: 31px; }
+
+.this_is_the_main_heading .carousel {
+  background-image: url("./images/bg_man_vs_ducks.png");
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 120px 0 150px; }
+  @media screen and (max-width: 767px) {
+    .this_is_the_main_heading .carousel {
+      padding: 50px 0 100px; } }
+  @media screen and (max-width: 320px) {
+    .this_is_the_main_heading .carousel {
+      padding: 0 0 100px; } }
+  .this_is_the_main_heading .carousel h3 {
+    font-size: 63px;
+    margin-bottom: 50px;
+    color: #fff; }
+    @media screen and (max-width: 767px) {
+      .this_is_the_main_heading .carousel h3 {
+        font-size: 30px;
+        margin-bottom: 20px; } }
+    @media screen and (max-width: 420px) {
+      .this_is_the_main_heading .carousel h3 {
+        font-size: 20px;
+        margin-bottom: 10px; } }
+  .this_is_the_main_heading .carousel p {
+    font-size: 23px;
+    margin-bottom: 60px;
+    color: #fff; }
+    @media screen and (max-width: 767px) {
+      .this_is_the_main_heading .carousel p {
+        font-size: 15px;
+        margin-bottom: 20px; } }
+    @media screen and (max-width: 420px) {
+      .this_is_the_main_heading .carousel p {
+        margin-bottom: 10px; } }
+    @media screen and (max-width: 320px) {
+      .this_is_the_main_heading .carousel p {
+        margin-top: 25px; } }
+  .this_is_the_main_heading .carousel a {
+    font-size: 26px;
+    border: 3px solid #fff;
+    padding: 25px 35px;
+    border-radius: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: #fff; }
+    @media screen and (max-width: 767px) {
+      .this_is_the_main_heading .carousel a {
+        font-size: 15px;
+        padding: 10px 15px;
+        border: 1px solid #fff; } }
+    @media screen and (max-width: 420px) {
+      .this_is_the_main_heading .carousel a {
+        font-size: 10px;
+        padding: 5px 7px; } }
+
+.owl-nav .owl-prev:before {
+  content: "\f104";
+  color: #49cbcd;
+  font-size: 40px;
+  display: block;
+  position: absolute;
+  padding: 2px 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 30px;
+  top: 250px;
+  font-weight: 900 !important;
+  font-family: "Font Awesome 5 Free" !important; }
+  @media screen and (max-width: 767px) {
+    .owl-nav .owl-prev:before {
+      font-size: 20px;
+      padding: 0 10px;
+      top: 100px; } }
+  @media screen and (max-width: 420px) {
+    .owl-nav .owl-prev:before {
+      font-size: 15px;
+      top: 40px;
+      padding: 0 7px;
+      left: 20px; } }
+
+.owl-nav .owl-next:before {
+  content: "\f105";
+  color: #49cbcd;
+  font-size: 40px;
+  font-weight: 900 !important;
+  font-family: "Font Awesome 5 Free" !important;
+  padding: 2px 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 250px; }
+  @media screen and (max-width: 767px) {
+    .owl-nav .owl-next:before {
+      font-size: 20px;
+      padding: 0 10px;
+      top: 100px; } }
+  @media screen and (max-width: 420px) {
+    .owl-nav .owl-next:before {
+      font-size: 15px;
+      top: 40px;
+      padding: 0 7px;
+      right: 20px; } }
+
+.the_team h2 {
+  font-size: 42px;
+  color: #4e525d;
+  margin: 115px 0 130px; }
+  @media screen and (max-width: 767px) {
+    .the_team h2 {
+      margin: 40px 0 40px;
+      font-size: 30px; } }
+.the_team h4 {
+  font-size: 22px;
+  color: #4e525d;
+  margin: 71px 0 16px 0; }
+.the_team h5 {
+  font-size: 14px;
+  color: #4e525d;
+  margin-bottom: 38px; }
+.the_team p {
+  font-size: 14px;
+  color: #4e525d;
+  margin-bottom: 110px;
+  line-height: 25px; }
+
+.basic_pro_premium {
+  padding: 115px 0 100px 0;
+  background-color: #f1f1f1; }
+  @media screen and (max-width: 992px) {
+    .basic_pro_premium ul {
+      padding: 0;
+      margin-top: 40px; } }
+  .basic_pro_premium ul li {
+    list-style: none;
+    font-size: 14px;
+    color: #8c9299;
+    border-bottom: #ecf0f1 1px solid;
+    padding: 17px 0 21px 0;
+    background-color: #fff; }
+  .basic_pro_premium ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 5px; }
+  .basic_pro_premium .left li:first-of-type {
+    color: #fff;
+    background-color: #485460;
+    font-size: 26px; }
+  .basic_pro_premium .left li:nth-child(2) {
+    font-size: 20px;
+    color: #485460;
+    background-color: #f8f9fb; }
+  .basic_pro_premium .left li:last-of-type {
+    background-color: #f8f9fb;
+    padding: 28px; }
+    .basic_pro_premium .left li:last-of-type a {
+      background-color: #788492; }
+  .basic_pro_premium .middle li:first-of-type {
+    color: #fff;
+    background-color: #49cbcd;
+    font-size: 26px; }
+  .basic_pro_premium .middle li:nth-child(2) {
+    font-size: 20px;
+    color: #485460;
+    background-color: #f8f9fb; }
+  .basic_pro_premium .middle li:last-of-type {
+    background-color: #f8f9fb;
+    padding: 28px; }
+    .basic_pro_premium .middle li:last-of-type a {
+      background-color: #49cbcd; }
+  .basic_pro_premium .right li:first-of-type {
+    color: #fff;
+    background-color: #485460;
+    font-size: 26px; }
+  .basic_pro_premium .right li:nth-child(2) {
+    font-size: 20px;
+    color: #485460;
+    background-color: #f8f9fb; }
+  .basic_pro_premium .right li:last-of-type {
+    background-color: #f8f9fb;
+    padding: 28px; }
+    .basic_pro_premium .right li:last-of-type a {
+      background-color: #788492; }
+
+footer {
+  background-image: url("./images/bg_footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px; }
+  footer h3 {
+    font-size: 42px;
+    color: #fff;
+    margin: 110px 0; }
+  footer h5 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 18px; }
+  footer p {
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-bottom: 40px; }
+  footer .f_twitter_g {
+    width: 160px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between; }
+    footer .f_twitter_g i {
+      border-radius: 50%;
+      font-size: 22px;
+      color: #fff; }
+    footer .f_twitter_g i:first-of-type {
+      padding: 10px 15px;
+      background-color: #3b5997; }
+    footer .f_twitter_g i:nth-child(2) {
+      background-color: #3ec2f3;
+      padding: 10px; }
+    footer .f_twitter_g i:last-of-type {
+      background-color: #e44c41;
+      padding: 10px 7px; }
+  footer h6 {
+    font-size: 14px;
+    color: #bface2; }
+  footer a {
+    list-style: none;
+    color: #bface2; }
+  footer form input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    color: #c1c1c1;
+    font-size: 16px;
+    border: none;
+    padding-left: 20px; }
+  footer form textarea {
+    border-radius: 5px;
+    width: 100%;
+    height: 180px;
+    font-size: 16px;
+    color: #c1c1c1;
+    border: none;
+    padding-left: 20px;
+    padding-top: 25px; }
+  footer form button {
+    background-color: #49cbcd;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    margin-top: 31px; }
+
+/*# sourceMappingURL=style.css.map */

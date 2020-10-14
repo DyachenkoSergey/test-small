@@ -1,0 +1,392 @@
+@import "bootstrap-theme.min.css";
+@import "bootstrap.min.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+$color-white: #fff;
+
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+
+body{
+  background-color: $color-white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.team_logo{
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+.navbar-default{
+  background-image: none;
+}
+.navbar-brand{
+  @include max-screen(767px){
+    padding-top: 15px!important;
+  }
+}
+.navbar{
+  margin-bottom: 0;
+  background-color: $color-white;
+  .logo_header{
+    width: 125px;
+    height: 40px;
+    img{
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+}
+.navbar-right {
+  li {
+    border-bottom: 2px solid transparent;
+    &:hover {
+      background-color: #f8f9fb;
+      border-bottom: 2px solid #49cbcd;
+    }
+    a {
+      color: #484c55;
+      font-size: 15px;
+      padding: 45px 27px;
+      &:hover{
+        color: #49cbcd!important;
+      }
+      @include max-screen(992px){
+        padding: 30px 20px;
+      }
+
+
+
+    }
+  }
+}
+.navbar-brand{
+    padding-top: 31px;
+}
+
+.this_is_the_main_heading{
+  .carousel{
+    background-image: url("./images/bg_man_vs_ducks.png");
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 120px 0 150px;
+    @include max-screen(767px){
+      padding: 50px 0 100px;
+    }
+    @include max-screen(320px){
+      padding: 0 0 100px;
+    }
+
+    h3{
+      font-size: 63px;
+      margin-bottom: 50px;
+      color: $color-white;
+      @include max-screen(767px){
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      @include max-screen(420px){
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+    }
+    p{
+      font-size: 23px;
+      margin-bottom: 60px;
+      color: $color-white;
+      @include max-screen(767px){
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+      @include max-screen(420px){
+        margin-bottom: 10px;
+      }
+      @include max-screen(320px){
+        margin-top: 25px;
+      }
+    }
+    a{
+      font-size: 26px;
+      border: 3px solid $color-white;
+      padding: 25px 35px;
+      border-radius: 10px;
+      list-style: none;
+      text-decoration: none;
+      color: $color-white;
+      @include max-screen(767px){
+        font-size: 15px;
+        padding: 10px 15px;
+        border: 1px solid $color-white;
+      }
+      @include max-screen(420px){
+        font-size: 10px;
+        padding: 5px 7px;
+      }
+    }
+  }
+
+}
+
+.owl-nav .owl-prev:before{
+  content: "\f104";
+  color: #49cbcd;
+  font-size: 40px;
+  display: block;
+  position: absolute;
+  padding: 2px 20px;
+  border-radius: 50%;
+  background-color: $color-white;
+  left: 30px;
+  top: 250px;
+  font-weight: 900!important;
+  font-family: "Font Awesome 5 Free"!important;
+  @include max-screen(767px){
+    font-size: 20px;
+    padding: 0 10px;
+    top: 100px;
+  }
+  @include max-screen(420px){
+    font-size: 15px;
+    top: 40px;
+    padding: 0 7px;
+    left: 20px;
+  }
+}
+
+.owl-nav .owl-next:before{
+  content: "\f105";
+  color: #49cbcd;
+  font-size: 40px;
+  font-weight: 900!important;
+  font-family: "Font Awesome 5 Free"!important;
+  padding: 2px 20px;
+  border-radius: 50%;
+  background-color: $color-white;
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 250px;
+  @include max-screen(767px){
+    font-size: 20px;
+    padding: 0 10px;
+    top: 100px;
+  }
+  @include max-screen(420px){
+    font-size: 15px;
+    top: 40px;
+    padding: 0 7px;
+    right: 20px;
+  }
+}
+.the_team{
+  h2{
+    font-size: 42px;
+    color: #4e525d;
+    margin: 115px 0 130px;
+    @include max-screen(767px){
+      margin: 40px 0 40px;
+      font-size: 30px;
+    }
+  }
+  h4{
+    font-size: 22px;
+    color: #4e525d;
+    margin: 71px 0 16px 0;
+  }
+  h5{
+    font-size: 14px;
+    color: #4e525d;
+    margin-bottom: 38px;
+  }
+  p{
+    font-size: 14px;
+    color: #4e525d;
+    margin-bottom: 110px;
+    line-height: 25px;
+  }
+}
+.basic_pro_premium{
+  padding: 115px 0 100px 0;
+  background-color: #f1f1f1;
+  ul{
+    @include max-screen(992px){
+      padding: 0;
+      margin-top: 40px;
+    }
+    li{
+      list-style: none;
+      font-size: 14px;
+      color: #8c9299;
+      border-bottom: #ecf0f1 1px solid;
+      padding: 17px 0 21px 0;
+      background-color: $color-white;
+    }
+    a{
+      text-transform: uppercase;
+      text-decoration: none;
+      list-style: none;
+      color: $color-white;
+      padding: 15px 50px;
+      border-radius: 5px;
+    }
+  }
+  .left{
+    li:first-of-type{
+      color: $color-white;
+      background-color: #485460;
+      font-size: 26px;
+    }
+    li:nth-child(2){
+      font-size: 20px;
+      color: #485460;
+      background-color: #f8f9fb;
+    }
+    li:last-of-type{
+      background-color: #f8f9fb;
+      padding: 28px;
+      a{
+        background-color: #788492;
+      }
+    }
+  }
+  .middle{
+    li:first-of-type{
+      color: $color-white;
+      background-color: #49cbcd;
+      font-size: 26px;
+    }
+    li:nth-child(2){
+      font-size: 20px;
+      color: #485460;
+      background-color: #f8f9fb;
+    }
+    li:last-of-type{
+      background-color: #f8f9fb;
+      padding: 28px;
+      a{
+        background-color: #49cbcd;
+      }
+    }
+  }
+  .right{
+    li:first-of-type{
+      color: $color-white;
+      background-color: #485460;
+      font-size: 26px;
+    }
+    li:nth-child(2){
+      font-size: 20px;
+      color: #485460;
+      background-color: #f8f9fb;
+    }
+    li:last-of-type{
+      background-color: #f8f9fb;
+      padding: 28px;
+      a{
+        background-color: #788492;
+      }
+    }
+  }
+}
+footer{
+  background-image: url('./images/bg_footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+  h3{
+    font-size: 42px;
+    color: $color-white;
+    margin: 110px 0;
+  }
+  h5{
+    font-size: 24px;
+    color: $color-white;
+    margin-bottom: 18px;
+  }
+  p{
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-bottom: 40px;
+  }
+  .f_twitter_g{
+    width: 160px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    i{
+      border-radius: 50%;
+      font-size: 22px;
+      color: $color-white;
+    }
+    i:first-of-type{
+      padding: 10px 15px;
+      background-color: #3b5997;
+    }
+    i:nth-child(2){
+      background-color: #3ec2f3;
+      padding: 10px;
+    }
+    i:last-of-type{
+      background-color: #e44c41;
+      padding: 10px 7px;
+    }
+  }
+  h6{
+    font-size: 14px;
+    color: #bface2;
+  }
+  a{
+    list-style: none;
+    color: #bface2;
+  }
+  form{
+    input{
+      width: 100%;
+      height: 45px;
+      border-radius: 5px;
+      color: #c1c1c1;
+      font-size: 16px;
+      border: none;
+      padding-left: 20px;
+    }
+    textarea{
+      border-radius: 5px;
+      width: 100%;
+      height: 180px;
+      font-size: 16px;
+      color: #c1c1c1;
+      border: none;
+      padding-left: 20px;
+      padding-top: 25px;
+    }
+    button{
+      background-color: #49cbcd;
+      color: $color-white;
+      padding: 12px 50px;
+      border-radius: 5px;
+      font-size: 20px;
+      border: none;
+      margin-top: 31px;
+    }
+
+  }
+}
