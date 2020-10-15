@@ -64,7 +64,7 @@ body {
   @media screen and (max-width: 767px) {
     .this_is_the_main_heading .carousel {
       padding: 50px 0 100px; } }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 420px) {
     .this_is_the_main_heading .carousel {
       padding: 0 0 100px; } }
   .this_is_the_main_heading .carousel h3 {
@@ -89,9 +89,7 @@ body {
         margin-bottom: 20px; } }
     @media screen and (max-width: 420px) {
       .this_is_the_main_heading .carousel p {
-        margin-bottom: 10px; } }
-    @media screen and (max-width: 320px) {
-      .this_is_the_main_heading .carousel p {
+        margin-bottom: 10px;
         margin-top: 25px; } }
   .this_is_the_main_heading .carousel a {
     font-size: 26px;
