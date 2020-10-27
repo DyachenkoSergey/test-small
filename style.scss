@@ -12,8 +12,6 @@ $color-white: #fff;
     @content;
   }
 }
-
-
 body{
   background-color: $color-white;
   font-family: 'Open Sans', sans-serif;
